@@ -13,6 +13,7 @@
         "php": "^7.4 || ^8.0",
         "magento/framework": "^103.0.0"
     },
+    "version": "1.0.0",
     "autoload": {
         "files": [
             "registration.php"
