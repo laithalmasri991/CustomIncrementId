@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_order_invoice_save_before">
+        <observer name="apply_custom_increment_id_invoice" instance="Laith\CustomIncrementId\Observer\ApplyCustomIncrementId"/>
+    </event>
+    <event name="sales_order_save_before">
+        <observer name="apply_custom_increment_id_order" instance="Laith\CustomIncrementId\Observer\ApplyCustomOrderIncrementId"/>
+    </event>
+    <event name="sales_order_creditmemo_save_before">
+        <observer name="apply_custom_increment_id_creditmemo" instance="Laith\CustomIncrementId\Observer\ApplyCustomCreditmemoIncrementId"/>
+    </event>
+</config>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="laith_integration" translate="label">
+            <label>Laith Integration</label>
+        </tab>
+
+        <section id="custom_increment_id" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Custom Increment ID</label>
+            <tab>laith_integration</tab>
+            <resource>Laith_CustomIncrementId::config</resource>
+
+            <group id="general_settings" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+
+                <!-- Enable Custom Increment ID Field -->
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Custom Increment ID</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <!-- Order Increment Prefix Field -->
+                <field id="order_prefix" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Order Increment Prefix</label>
+                </field>
+
+                <!-- Invoice Increment Prefix Field -->
+                <field id="invoice_prefix" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Invoice Increment Prefix</label>
+                </field>
+
+                <!-- Credit Memo Increment Prefix Field -->
+                <field id="creditmemo_prefix" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Credit Memo Increment Prefix</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

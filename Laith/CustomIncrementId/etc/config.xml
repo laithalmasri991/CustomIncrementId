@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/config.xsd">
+    <default>
+        <custom_increment_id>
+            <general_settings>
+                <enabled>0</enabled>
+                <order_prefix>ORD</order_prefix>
+                <invoice_prefix>INV</invoice_prefix>
+                <creditmemo_prefix>CRD</creditmemo_prefix>
+            </general_settings>
+        </custom_increment_id>
+    </default>
+</config>
