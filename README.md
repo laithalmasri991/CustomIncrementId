@@ -1,10 +1,11 @@
 # Magento 2 Custom Increment ID Module
 
-This Magento 2 module, **Custom Increment ID**, allows you to customize increment IDs for invoices and credit memos. You can set unique prefixes and ensure IDs are unique across the system. This module is ideal for businesses that require tailored invoice and credit memo numbering for compliance or branding purposes.
+This Magento 2 module, **Custom Increment ID**, allows you to customize increment IDs for invoices and credit memos in Magento 2. This extension is essential for businesses needing tailored invoice and credit memo numbering to meet compliance or branding needs.
 
 ## Features
-- Add custom prefixes for invoice and credit memo increment IDs.
-- Ensure IDs are unique.
+- Customize increment IDs for **Magento 2 invoices** and **credit memos**.
+- Add custom prefixes to differentiate between entities.
+- Ensure unique IDs for Magento 2 order documents.
 - Fully configurable via the Magento admin panel.
 
 ## Installation
@@ -16,7 +17,7 @@ This Magento 2 module, **Custom Increment ID**, allows you to customize incremen
        "repositories": [
            {
                "type": "vcs",
-               "url": "https://github.com/<your-github-username>/magento-custom-increment-id"
+               "url": "https://github.com/laithalmasri991/CustomIncrementId.git"
            }
        ]
    }
@@ -52,7 +53,7 @@ This Magento 2 module, **Custom Increment ID**, allows you to customize incremen
 ## Usage
 
 - After enabling and configuring the module, any new invoices or credit memos will have increment IDs prefixed with the values you configure.
-- The module ensures that all IDs are unique.
+- The module ensures that all IDs are unique and compliant with Magento 2 standards.
 
 ## Requirements
 - Magento 2.4.x
